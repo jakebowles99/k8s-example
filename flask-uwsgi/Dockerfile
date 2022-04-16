@@ -27,8 +27,8 @@ MAINTAINER Levi Bracken <levi.bracken@gmail.com>
 # Get and install required packages.
 RUN apt-get update && apt-get install -y -q \
     build-essential \
-    python-dev \
-    python-pip \
+    python \
+    pip \
   && rm -rf /var/lib/apt/lists/*
 
 # Install required dependencies (includes Flask and uWSGI)
